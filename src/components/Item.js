@@ -12,8 +12,8 @@ export default function Item(props) {
   const { id } = useParams()
   const { url, path } = useRouteMatch() // as you know, url is actually the pathname piece of the URL
 
-  console.log('url', url) // makes Links easier
-  console.log('path', path) // makes Routes easier
+  console.log('url', url) // makes Link/NavLink easier to write the 'to' prop
+  console.log('path', path) // makes Routes easier to wirte the 'path' prop
 
   console.log('the MAGNIFICENT :id from the URL', id)
 
