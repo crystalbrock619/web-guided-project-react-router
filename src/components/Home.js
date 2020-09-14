@@ -6,7 +6,7 @@ export default function Home() {
   // navigate us to <website base URL>/items-list
 
   const routeToShop = () => {
-
+    // react router own version of the History API
   }
 
   return (
