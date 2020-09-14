@@ -5,8 +5,9 @@ import { useRouteMatch } from 'react-router-dom'
 
 export default function ItemsList(props) {
   const { items } = props
-  const { url } = useRouteMatch() // returns an object with things, among them the current ulr
-  
+  // returns an object with things, among them the current url
+  // so we don't have to repeat it in our Links
+  const { url, path } = useRouteMatch()
 
   // We'll grab the current URL using the hook
 
