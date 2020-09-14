@@ -11,6 +11,7 @@ export default function ItemsList(props) {
   const { url, path } = useRouteMatch()
 
   console.log('the url from useRouteMatch', url)
+  console.log('the path from useRouteMatch', path)
 
   return (
     <div className='items-list-wrapper'>
