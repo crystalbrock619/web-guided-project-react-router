@@ -11,6 +11,7 @@ export default function Home() {
     // react router own version of the History API
     // for example, we could navigate to different places,
     // after checking auth status etc...
+    // IMPERATIVE CODE (VS DECLARATIVE COULD WHICH WAS THE <Link />)
     console.log(history)
     history.push('/items-list')
   }
