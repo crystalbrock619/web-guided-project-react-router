@@ -7,10 +7,10 @@ export default function Item(props) {
   // We get ALL items through props. We'll use the URL to find out which item is the one to show.
   const { items } = props
 
-  // 👉 STEP 7 - We need to pull item from items, using a parameter in the URL (:itemID)
+  // 👉 STEP 7 - We need to pull item from items, using a parameter in the URL (:id)
   // Beware! The ids are integers, whereas URL parameters are strings.
   // Beware! The JSX is expecting 'item' to exist instantly!
-  // we use this hook to grab they dynamic parts of the path (:itemID).
+  // we use this hook to grab the dynamic parts of the path (:id).
   const item = {}
 
   return (
