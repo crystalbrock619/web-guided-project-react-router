@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { } from 'rerodo'
+import { BrowserRouter } from 'react-router-dom'
 
 // Importing the top-level component
 import App from './components/App'
