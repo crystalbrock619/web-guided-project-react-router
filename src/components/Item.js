@@ -1,6 +1,6 @@
 import React from 'react'
 // We'll need quite a few imports from react-router-dom
-import { useParams, NavLink, Route, useRouteMatch } from 'react-router-dom'
+import { useParams, NavLink, Route, useRouteMatch, useHistory } from 'react-router-dom'
 
 import ItemDetails from './ItemDetails'
 
@@ -8,9 +8,10 @@ export default function Item(props) {
   // We get ALL items through props. We'll use the URL to find out which item is the one to show.
   const { items } = props
 
-  // we use this hook to grab the dynamic parts of the path (:id).
+  // we use this hook to grab the dynamic parts of the path (:id)
   const { id } = useParams()
   const { url, path } = useRouteMatch() // as you know, url is actually the pathname piece of the URL
+  const history = useHistory() // have goodies like history.push()
 
   console.log('url', url) // makes Link/NavLink easier to write the 'to' prop
   console.log('path', path) // makes Route easier to write the 'path' prop
