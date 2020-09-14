@@ -10,6 +10,7 @@ export default function Item(props) {
 
   // we use this hook to grab the dynamic parts of the path (:id).
   const { id } = useParams()
+  const { url } = useRouteMatch()
 
   console.log('the MAGNIFICENT :id from the URL', id)
 
@@ -36,8 +37,8 @@ export default function Item(props) {
 
       <nav className='item-sub-nav'>
         {/* 👉 STEP 8 - Here go the NavLinks to `<current url>/shipping` and `<current url>/description` */}
-        <NavLink>Shipping</NavLink>
-        <NavLink>Description</NavLink>
+        <NavLink to={`${url}/shipping`}>Shipping</NavLink>
+        <NavLink to={`${url}/description`}>Description</NavLink>
       </nav>
 
       {/* 👉 STEP 9 - Here go the Routes for `<current path>/shipping` and `<current path>/description` */}
