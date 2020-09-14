@@ -10,7 +10,7 @@ export default function Item(props) {
 
   // we use this hook to grab the dynamic parts of the path (:id).
   const { id } = useParams()
-  const { url } = useRouteMatch()
+  const { url } = useRouteMatch() // as you know, url is actually the pathname piece of the URL
 
   console.log('the MAGNIFICENT :id from the URL', id)
 
