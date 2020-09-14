@@ -43,7 +43,7 @@ export default function App(props) {
         {/* With Switch, order your Routes from "more specific path" to least */}
         {/* With Switch, the first Route "wins" */}
         {/* Without Switch, ALL Routes with paths that match are rendered */}
-        <Route path='/items-list/:'>
+        <Route path='/items-list/:id'>
           <Item />
         </Route>
 
