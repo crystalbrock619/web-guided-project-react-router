@@ -51,8 +51,8 @@ export default function App(props) {
           <Home />
         </Route>
 
-        <Route component={Home} path='/' />
-        <Route render={props => <Home />} path='/' />
+        {/* <Route component={Home} path='/' /> */}
+        {/* <Route render={props => <Home />} path='/' /> */}
       </Switch>
 
     </div>
