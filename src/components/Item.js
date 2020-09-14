@@ -9,9 +9,9 @@ export default function Item(props) {
   const { items } = props
 
   // we use this hook to grab the dynamic parts of the path (:id)
-  const { id } = useParams()
+  const { id, foo } = useParams()
   const { url, path } = useRouteMatch() // as you know, url is actually the pathname piece of the URL
-  const history = useHistory() // have goodies like history.push()
+  const history = useHistory() // have goodies like history.push(), similar to (native History API) history.pushState
 
   console.log('url', url) // makes Link/NavLink easier to write the 'to' prop
   console.log('path', path) // makes Route easier to write the 'path' prop
