@@ -9,8 +9,8 @@ export default function Item(props) {
   const { items } = props
   const { id } = useParams()
 
+  console.log('the MAGNIFICENT :id from the URL', id)
 
-  
   // 👉 STEP 7 - We need to pull item from items, using a parameter in the URL (:id)
   // Beware! The ids are integers, whereas URL parameters are strings.
   // Beware! The JSX is expecting 'item' to exist instantly!
