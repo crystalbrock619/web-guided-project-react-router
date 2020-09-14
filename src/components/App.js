@@ -50,6 +50,8 @@ export default function App(props) {
         <Route path='/'>
           <Home />
         </Route>
+
+        <Route component={Home} path=/>
       </Switch>
 
     </div>
