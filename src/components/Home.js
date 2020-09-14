@@ -9,6 +9,9 @@ export default function Home() {
 
   const routeToShop = () => {
     // react router own version of the History API
+    // 
+    console.log(history)
+    history.push('/items-list')
   }
 
   return (
