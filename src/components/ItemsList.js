@@ -1,9 +1,11 @@
 import React from 'react'
 // We'll need a Link and the useRouteMatch hook from 'react-router-dom'
 import { Link } from 'react-router-dom'
+import { useRouteMatch } from 'react-router-dom'
 
 export default function ItemsList(props) {
   const { items } = props
+  const { url } = useRouteMatch()
 
   // We'll grab the current URL using the hook
 
