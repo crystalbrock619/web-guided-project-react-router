@@ -10,7 +10,7 @@ export default function Item(props) {
 
   // we use this hook to grab the dynamic parts of the path (:id).
   const { id } = useParams()
-  const { url } = useRouteMatch() // as you know, url is actually the pathname piece of the URL
+  const { url, path } = useRouteMatch() // as you know, url is actually the pathname piece of the URL
 
   console.log('the MAGNIFICENT :id from the URL', id)
 
@@ -43,7 +43,7 @@ export default function Item(props) {
 
       {/* 👉 STEP 9 - Here go the Routes for `<current path>/shipping` and `<current path>/description` */}
       {/* These Routes should render <ItemDetails /> */}
-      <Route path={`${the path so far, including the :id and everything}/description`}>
+      <Route path={`${path}/description`}>
         <ItemDetails text={item.description} />
       </Route>
 
