@@ -10,9 +10,6 @@ export default function ItemsList(props) {
   // so we don't have to repeat it in our Links
   const { url, path } = useRouteMatch()
 
-  console.log('the url from useRouteMatch', url)
-  console.log('the path from useRouteMatch', path)
-
   return (
     <div className='items-list-wrapper'>
       {items.map(item => (

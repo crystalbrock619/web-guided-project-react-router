@@ -12,6 +12,9 @@ export default function Item(props) {
   const { id } = useParams()
   const { url, path } = useRouteMatch() // as you know, url is actually the pathname piece of the URL
 
+  console.log('url', url)
+  console.log('path', path)
+
   console.log('the MAGNIFICENT :id from the URL', id)
 
   // 👉 STEP 7 - We need to pull item from items, using a parameter in the URL (:id)
