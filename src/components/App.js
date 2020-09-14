@@ -41,8 +41,8 @@ export default function App(props) {
       {/* 👉 STEP 4 - Build a Switch with a Route for each of the components imported at the top */}
       <Switch>
         {/* With Switch, order your Routes from "more specific path" to least */}
-        {/* With  Switch the first Route "wins" */}
-        {/* Wi */}
+        {/* With Switch, the first Route "wins" */}
+        {/* Without Switch, ALL Routes with paths that match are rendered */}
         <Route path='/items-list'>
           <ItemsList items={stock} />
         </Route>
