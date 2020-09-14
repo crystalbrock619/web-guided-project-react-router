@@ -32,8 +32,9 @@ export default function App(props) {
             evt.preventDefault()
             history.pushState(null, null, '/foo')
           }}href='/'>Home</a> */}
+
           <Link to='/'>Home</Link>
-          <Link to='/items'>Home</Link>
+          <Link to='/items-list'>Shop</Link>
         </div>
       </nav>
 
