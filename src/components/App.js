@@ -42,6 +42,7 @@ export default function App(props) {
       <Route exact path='/'>
         <Home />
       </Route>
+      
     </div>
   )
 }
