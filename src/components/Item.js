@@ -18,7 +18,9 @@ export default function Item(props) {
   // Beware! The JSX is expecting 'item' to exist instantly!
 
   // find inside 'items' the 'item' with the given `id`
-  const item = {}
+  const item = items.find(it => {
+    return it.id == id
+  })
 
   return (
     <div className='item-wrapper'>
